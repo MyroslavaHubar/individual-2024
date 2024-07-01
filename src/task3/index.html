@@ -12,25 +12,30 @@
     />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/basicLightbox/5.0.0/basicLightbox.min.css"
+      integrity="sha512-C+KPK958JmUdU8B9SVr8YpEZtQ1T1XrFX/OLvE/lt336DFWXFHL5Y9/tUewMEU+Uy3dUAS363XXLdBine0WDyQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>EXAMPLE</title>
   </head>
   <body>
     <div class="js-form-container fb fb-h">
       <form class="form box js-form">
-        <input type="text" class="form-control" />
-        <input type="text" class="form-control" />
-        <input type="text" class="form-control" />
-        <input type="text" class="form-control" />
+        <input type="text" class="form-control" name="user-color" />
 
         <button class="form-control" type="submit">Create item</button>
       </form>
 
       <div class="box" style="width: fit-content">
         <ul class="js-items list">
-          <li class="box item hight">
+          <!-- <li class="box item hight">
+            <div class="item-color" style="background-color: aqua"></div>
             <button class="form-control" data-type="show">SHOW MORE</button>
             <button class="form-control" data-type="delete">DELETE</button>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -38,7 +43,12 @@
     <div class="backdrop">
       <div class="modalka"></div>
     </div>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/basicLightbox/5.0.0/basicLightbox.min.js"
+      integrity="sha512-jIc3kBeyfyLXBTmzUIXnbGiVK2wgWGcDIkJwkFW4bQ6v2h/piOKLwIfy3wOmKHWIu8DgYSKVth0DMUvExMYcOw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
