@@ -30,7 +30,7 @@ refs.ul.addEventListener("click", (e) => {
   const liElem = e.target.closest("li.item");
   liElem.remove();
   //   console.log(e.target.remove);});
-
+});
 //============================================================================
 
 refs.ul.addEventListener("click", (e) => {
@@ -38,4 +38,8 @@ refs.ul.addEventListener("click", (e) => {
   // console.log(e.target.dataset.color);
 
   const instance = basicLightbox.create(`
-    <d style="background-color: ${e.target.dataset.color}; widt
+    <d style="background-color: ${e.target.dataset.color}; width: 500px; height: 500px"></div>
+`);
+
+  instance.show();
+});
