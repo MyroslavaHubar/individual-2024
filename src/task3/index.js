@@ -38,7 +38,7 @@ refs.ul.addEventListener("click", (e) => {
   // console.log(e.target.dataset.color);
 
   const instance = basicLightbox.create(`
-    <d style="background-color: ${e.target.dataset.color}; width: 500px; height: 500px"></div>
+    <div style="background-color: ${e.target.dataset.color}; width: 500px; height: 500px"></div>
 `);
 
   instance.show();
