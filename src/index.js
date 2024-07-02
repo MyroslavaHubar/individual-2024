@@ -252,20 +252,22 @@ const books = [
 // function task1(books) {
 //   return books.filter(book => book.genre === 'Fantasy');
 // }
-
+//==============================================================================
 // 1. Знайти всі книги, видані після 2000 року.
 
 // function task2(books, value) {
 //   const result = books.filter(book => book.year >= value);
 //   return result;
 // }
-
+//==============================================================================
 // 1. Знайти всі книги, автором яких є 'Fyodor Dostoevsky'.
 
 // function task3(books, value) {
 //   const result = books.filter(book => book.author === value);
 //   return result;
 // }
+
+//==============================================================================
 // 1. Знайти всі книги з ціною меншою ніж 10 доларів.
 
 // function task4(books, value) {
@@ -273,6 +275,8 @@ const books = [
 //   return result;
 // }
 // console.log(task4(books, 10));
+
+//==============================================================================
 
 // 1. Знайти всі книги з рейтингом 3 і вище, з ціною меншою ніж 10 доларів.
 
@@ -293,7 +297,43 @@ const books = [
 //   });
 //   return result;
 // }
+//==============================================================================
+// 1.Знайти всі книги, видані до 1900 року.
 
+// function book1(books, year) {
+//   const result = books.filter(book => book.year <= year);
+//   return result;
+// }
+
+//==============================================================================
+// 1. Знайти всі книги, що містять слово 'and' у назві.
+
+// function book2(book, title) {
+//   const result = books.filter(book => book.title.includes(title));
+//   return result;
+// }
+
+//==============================================================================
+// 1. Знайти всі книги, автором яких є 'J.R.R. Tolkien'.
+
+// function book3(books, author) {
+//   const result = books.filter(book => book.author === author);
+//   return result;
+// }
+
+//==============================================================================
+// 1. Знайти всі книги жанру 'Historical' з рейтингом вище 4.7.
+
+// function book4(books, genre, rating) {
+//   const result = books.filter(book => {
+//     const condition1 = book.genre === genre;
+//     const condition2 = book.rating >= rating;
+//     return condition1 && condition2;
+//   });
+//   return result;
+// }
+
+//==============================================================================
 // 1. Знайти першу книгу жанру 'Romance' з ціною меншою ніж 8 доларів.
 
 // function task7(books, genre, price) {
@@ -305,12 +345,16 @@ const books = [
 //     return result;
 // }
 
+//==============================================================================
+
 // 1. Знайти першу книгу, видану до 1900 року.
 
 // function task8(books, year) {
 //     const result = books.find(book => book.year <= year);
 //     return result
 // }
+
+//==============================================================================
 // 1. Знайти першу книгу, що містить слово 'and' у назві.
 
 // function task9(books, title) {
@@ -318,12 +362,16 @@ const books = [
 //     return result;
 // }
 
+//==============================================================================
+
 // 1. Знайти першу книгу, автором якої є 'J.R.R. Tolkien'.
 
 // function task10(books, author) {
 //     const result = books.find(book => book.author === author);
 //     return result;
 // }
+
+//==============================================================================
 // 1. Знайти першу книгу жанру 'Historical' з рейтингом вище 4.7.
 
 // function task11(books, genre, rating) {
@@ -334,7 +382,59 @@ const books = [
 //     });
 //     return result;
 // }
+//==============================================================================
+// Знайти першу книгу жанру 'Fantasy'.
 
+// function book5(books, genre) {
+//   const result = books.find(book => book.genre === genre);
+//   return result;
+// }
+
+//==============================================================================
+// 1. Знайти першу книгу, видану після 2000 року.
+
+// function book6(books, year) {
+//   const result = books.find(book => book.year >= year);
+//   return result;
+// }
+
+//==============================================================================
+// 1. Знайти першу книгу, автором якої є 'Fyodor Dostoevsky'.
+
+// function book7(books, author) {
+//   const result = books.find(book => book.author === author);
+//   return result;
+// }
+
+//==============================================================================
+// 1. Знайти першу книгу з ціною меншою ніж 10 доларів.
+
+// function book8(books, price) {
+//   const result = books.find(book => book.price <= price);
+//   return result;
+// }
+
+//==============================================================================
+// 1. Знайти першу книгу з рейтингом 4.8 і вище.
+
+// function book9(books, rating) {
+//   const result = books.find(book => book.rating >= rating);
+//   return result;
+// }
+
+//==============================================================================
+// 1. Знайти першу книгу жанру 'Romance' з ціною меншою ніж 8 доларів.
+
+// function book10(books, genre, price) {
+//   const result = books.find(book => {
+//     const condition1 = book.genre === genre;
+//     const condition2 = book.price <= price;
+//     return condition1 && condition2;
+//   });
+//   return result;
+// }
+
+//==============================================================================
 // Отримати масив назв всіх книжок.
 
 // function task12(books) {
@@ -342,12 +442,15 @@ const books = [
 // return result;
 // }
 
+//==============================================================================
 // 1. Отримати масив авторів всіх книжок.
 
 // function task13(books) {
 //     const result = books.map(book => book.author);
 //     return result;
 // }
+
+//==============================================================================
 // 1. Створити масив об'єктів, які містять лише назву та автора кожної книжки.
 
 // function task14(books) {
@@ -377,6 +480,8 @@ const books = [
 //     return result;
 // }
 
+//==============================================================================
+
 // 1. Створити масив цін всіх книжок з подвоєною вартістю.
 
 // function task17(books) {
@@ -387,6 +492,7 @@ const books = [
 //     return result;
 // }
 
+//==============================================================================
 // 1. Створити масив об'єктів, де видання всіх книжок з доданими 5 роками до кожного.
 
 // function task18(books) {
@@ -398,6 +504,7 @@ const books = [
 //     return result;
 // }
 
+//==============================================================================
 // 1. Створити масив об'єктів, які містять назву книжки та її рейтинг у відсотках
 //    (помножений на 10).
 
@@ -412,6 +519,7 @@ const books = [
 //     return result;
 // }
 
+//==============================================================================
 // 1. Створити масив об'єктів, де назва книжки буде в верхньому регістрі.
 
 // function task20(books) {
@@ -423,6 +531,7 @@ const books = [
 //     return result;
 // }
 
+//==============================================================================
 // 1. Створити масив рядків, що містять інформацію про кожну книжку в форматі
 //    "назва - автор".
 
@@ -435,6 +544,7 @@ const books = [
 //     return result;
 // }
 
+//==============================================================================
 // 1. Створити масив об'єктів, де кожна книжка буде мати нове поле `discountPrice`,
 //    що дорівнює ціні зі знижкою 10%.
 
@@ -447,6 +557,8 @@ const books = [
 
 //     return result;
 // }
+
+//==============================================================================
 // 1. Створити масив об'єктів, що містять назву книжки та її ціну з доданим
 //    податком 15%.
 
@@ -461,6 +573,7 @@ const books = [
 //     return result;
 // }
 
+//==============================================================================
 // 1. Створити масив назв книжок, які видані після 2000 року.
 
 // function task24(books, year) {
@@ -473,9 +586,122 @@ const books = [
 //   return result;
 // }
 
+//==============================================================================
 // 1. Створити масив об'єктів, де кожна книжка буде мати нове поле `isClassic`, що
 //    дорівнює `true`, якщо книжка видана до 1950 року.
 
-// books.toSorted((a, b) => {
-//     return a.year - b.year;
-// })
+// function task25(books, year) {
+//   const result = books
+//     .filter(book => book.year <= year)
+//     .map(book => {
+//       const obj = { ...book };
+//       obj.isClassic = true;
+//       return obj;
+//     });
+//   return result;
+// }
+
+// console.table(task25(books, 1950));
+//==============================================================================
+// Отримати масив жанрів всіх книжок у верхньому регістрі.
+
+// function task26(books) {
+//   const result = books.map(book => book.genre.toUpperCase());
+//   return result;
+// }
+
+// console.table(task26(books));
+//==============================================================================
+// 1. Створити масив назв книжок, де всі слова в назві починаються з великої
+//    літери.
+
+// function task27(books) {
+//   const result = books.map(book =>
+//     book.title
+//       .split(' ')
+//       .map(word => word[0].toUpperCase() + word.slice(1))
+//       .join(' '),
+//   );
+//   return result;
+// }
+
+// console.table(task27(books));
+//==============================================================================
+// 1. Створити масив об'єктів, що містять лише автора та рік видання кожної книжки.
+
+// function task28(books) {
+//   const result = books.map(book => {
+//     const obj = {
+//       author: book.author,
+//       year: book.year,
+//     };
+//     return obj;
+//   });
+//   return result;
+// }
+
+// console.table(task28(books));
+// //==============================================================================
+// 1. Створити масив цін книжок, конвертованих з доларів у євро (курс 1 долар =
+//    0.85 євро).
+
+// function task29(books) {
+//   const result = books.map(book => Math.ceil(book.price * 0.85));
+//   return result;
+// }
+
+// console.table(task29(books));
+//==============================================================================
+// 1. Створити масив назв книжок з доданим в кінці рядком "(Special Edition)".
+
+// function task30(books) {
+//   const result = books.map(book => book.title + ' (Special Edition)');
+//   return result;
+// }
+
+// console.table(task30(books));
+
+//==============================================================================
+// 1. Створити масив об'єктів, де кожна книжка буде мати нове поле `shortTitle`, що
+//    містить тільки перше слово з назви.
+
+// function task31(books) {
+//   const result = books.map(book => {
+//     const obj = { ...book };
+//     obj.shortTitle = book.title.split(' ')[0];
+//     return obj;
+//   });
+//   return result;
+// }
+
+// console.table(task31(books));
+//==============================================================================
+// 1. Створити масив об'єктів, де кожна книжка буде мати нове поле `description`,
+//    що містить рядок "Ця книга від автора [author] була видана у [year] році".
+
+// function task32(books) {
+//   const result = books.map(book => {
+//     const obj = { ...book };
+//     obj.description = `Ця книга від автора ${book.author} була видана у ${book.year} році`;
+//     return obj;
+//   });
+//   return result;
+// }
+
+// console.table(task32(books));
+//==============================================================================
+// 1. Створити масив об'єктів, що містять лише назву та жанр кожної книжки, де жанр
+//    записаний у нижньому регістрі.
+
+// function task33(books) {
+//   const result = books.map(book => {
+//     const obj = {
+//       title: book.title,
+//       genre: book.genre.toLowerCase(),
+//     };
+//     return obj;
+//   });
+//   return result;
+// }
+
+// console.table(task33(books));
